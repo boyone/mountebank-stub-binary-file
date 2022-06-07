@@ -1,0 +1,32 @@
+{
+  "port": 3000,
+  "protocol": "http",
+  "stubs": [
+    {
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "body": "UEsDBAoAAAAAAKpRb1QgMDo2BgAAAAYAAAAFABwAaGVsbG9VVAkAA08EMGJQBDBidXgLAAEE9QEAAAQUAAAAaGVsbG8KUEsBAh4DCgAAAAAAqlFvVCAwOjYGAAAABgAAAAUAGAAAAAAAAQAAAKSBAAAAAGhlbGxvVVQFAANPBDBidXgLAAEE9QEAAAQUAAAAUEsFBgAAAAABAAEASwAAAEUAAAAAAA==",
+            "headers": {
+              "Content-Type": "application/zip",
+              "Content-Disposition": "attachment; filename=\"hello.zip\""
+            },
+            "_mode": "binary"
+          }
+        },
+        {
+          "is": {
+            "statusCode": 200,
+            "body": "<%- stringify(filename, 'hello.txt') %>",
+            "headers": {
+              "Content-Type": "application/zip",
+              "Content-Disposition": "attachment; filename=\"hello.zip\""
+            },
+            "_mode": "binary"
+          }
+        }
+      ]
+    }
+  ]
+}
